@@ -6,7 +6,9 @@
 
 ## Usage
 
-Inside the repo folder, do `git archive vanilla | tar -x -C project_path`
+Clone this repo and always make sure it is updated
+
+Inside the repo folder, do `git archive master | tar -x -C project_path`
 
 And then cd to `project_path` and do
 
