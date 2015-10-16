@@ -23,16 +23,16 @@ module.exports = {
       include: path.join(__dirname, 'src')
     }, {
       test: /\.html$/,
-      loaders: ['html-loader'],
+      loaders: ['html'],
       include: path.join(__dirname, 'src')
-    }, {
+    },
+    {
       test: /\.css$/,
-      loaders: ['css-loader'],
-      include: path.join(__dirname, 'src')
-    }, {
+      loaders: ['style', 'css'],
+    },
+    {
       test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-      loaders: ['url-loader'],
-      include: path.join(__dirname, 'src')
+      loaders: ['file']
     }]
   }
 };
